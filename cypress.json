@@ -1,0 +1,10 @@
+{
+    "chromeWebSecurity": false,
+    "baseUrl": "https://www.skedula.com/",
+    "env": {
+        "baseUrl": "https://www.skedula.com/",
+        "baseUrlSub": "https://auth.ioeducation.com/users/sign_in",
+        "baseUrlP": "https://www.skedula.com/auth/login/",
+        "baseUrlPsub": "https://www.skedula.com/home/"
+      } 
+}
