@@ -1,6 +1,8 @@
 {
   "name": "Chetan",
-  "email": "cdhutekar-c@illuminateed.net",
-  "password": "Chetan@3701",
-  "body": "Fixtures are a great way to mock data for responses to routes"
+  "email": "qa02@casenex.com",
+  "password": "QAqa1234",
+  "body": "Fixtures are a great way to mock data for responses to routes",
+  "school":"00X001 - NYC Demo School",
+  "term":"2011-2012: Term 2"
 }

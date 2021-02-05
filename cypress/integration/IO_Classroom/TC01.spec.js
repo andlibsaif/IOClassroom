@@ -6,13 +6,13 @@
 import login from '../Pageobject/login.js'
 
 
-
+const log_in = new login()
 
 beforeEach( () => {
-    let user
-    cy
-        .intercept('POST','https://www.skedula.com/').as('login')
-        .intercept('POST', 'https://auth.ioeducation.com/users/sign_in').as('loginDetail')
+    //let user
+    //cy
+      //  .intercept('POST','https://www.skedula.com/').as('login')
+       // .intercept('POST', 'https://auth.ioeducation.com/users/sign_in').as('loginDetail')
           
        // .intercept('POST', '/api/api/Account/Logoff').as('logOff')
 
@@ -31,59 +31,44 @@ beforeEach( () => {
 
 })
 
+afterEach(() => {
+    // runs after each test in the block
+    log_in.logout()
+  })
+
 
 describe('Login', function(){
-    let cypress
-    const log_in = new login()
-        it('Sign in', function(){
+    //let cypress
+    
+        it('Login to school', function(){
 
             cy
             .get('@user')
             .then(user => {
+                 log_in.login(user.email,user.password)
+                 log_in.proceed_school()
                  
-        log_in.signInButton().click()
+            })
+        })
+        it('Login to admin portal', function(){
 
-        log_in.email().type(user.email)
-         
-        log_in.signInButton().click()
+            cy
+            .get('@user')
+            .then(user => {
+                 log_in.login(user.email,user.password)
+                 log_in.proceed_admin()
+            })
+        })
+        it('Login to impersonate', function(){
 
-        log_in.password().type(user.password)
-
-        log_in.signInButton().click()
+            cy
+            .get('@user')
+            .then(user => {
+                 log_in.login(user.email,user.password)
+                 log_in.proceed_impersonate()
+            })
+       })
 
     
-        
-
-       // cy.visit('https://www.skedula.com/home')
-       
-        cy.visit(Cypress.env('baseUrlP'))
-
-
-            })
-      
-    })
 })
 
-// describe('GURU: Login Positive', () => {
-//     const log_in = new login()
-//     it('Positive Login', ()=>{
-//         cy
-//         .get('@user')
-//         .then(user => {
-//             log_in.signInButton().click()
-//             log_in.email().type(user.email)
-//             log_in.signInButton().click()
-//             log_in.password().type(user.password)
-//             log_in.signInButton().click()
-//         cy.wait('@login')
-//         .then(loginReq => {
-//             expect(loginReq.status).to.eq(200);
-//         });
-//         cy.wait('@loginDetail')
-//         .then(loginDetail => {
-//             expect(loginDetail.status).to.eq(200);
-//         });
-      
-//         });
-//     });
-// });
