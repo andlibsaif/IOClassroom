@@ -1,0 +1,185 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-02-16T09:18:08.836Z",
+    "end": "2021-02-16T09:19:08.783Z",
+    "duration": 59947,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bd38abf7-ffdd-4850-92fd-29ddcfb2859a",
+      "title": "",
+      "fullFile": "cypress\\integration\\IO_Classroom\\Login.spec.js",
+      "file": "cypress\\integration\\IO_Classroom\\Login.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9e952cf0-abbd-44ba-97b3-451ad0975ffc",
+          "title": "School User",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to school",
+              "fullTitle": "School User Login to school",
+              "timedOut": null,
+              "duration": 34542,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "log_in.login();\nlog_in.proceed_school();\ncy.title().should('eq', 'Dashboard');",
+              "err": {},
+              "uuid": "362379f6-405b-4f8e-9ad9-a26b74e29bd6",
+              "parentUUID": "9e952cf0-abbd-44ba-97b3-451ad0975ffc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "362379f6-405b-4f8e-9ad9-a26b74e29bd6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 34542,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "88fd1ef3-f816-463a-9856-62a3ac084d62",
+          "title": "Admin User",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to admin portal",
+              "fullTitle": "Admin User Login to admin portal",
+              "timedOut": null,
+              "duration": 14597,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "log_in.login();\nlog_in.proceed_admin();\ncy.title().should('eq', 'School List');",
+              "err": {},
+              "uuid": "4aa08fcd-08e2-4993-a1f2-720a3bac5039",
+              "parentUUID": "88fd1ef3-f816-463a-9856-62a3ac084d62",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4aa08fcd-08e2-4993-a1f2-720a3bac5039"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 14597,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "d25bb17f-ec15-4950-acdb-ffc9d4a58de5",
+          "title": "Impersonate User",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to impersonate",
+              "fullTitle": "Impersonate User Login to impersonate",
+              "timedOut": null,
+              "duration": 5784,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "log_in.login();\nlog_in.proceed_impersonate();\ncy.title().should('eq', 'Troubleshoot');",
+              "err": {},
+              "uuid": "3d7fea14-4dac-489d-9d3e-1c20d8c07e63",
+              "parentUUID": "d25bb17f-ec15-4950-acdb-ffc9d4a58de5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3d7fea14-4dac-489d-9d3e-1c20d8c07e63"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5784,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/json",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "toConsole": true,
+        "charts": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

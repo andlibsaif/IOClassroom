@@ -1,14 +1,18 @@
 {
     "chromeWebSecurity": false,
-    "screenshotOnRunFailure": true,
     "trashAssetsBeforeRuns": true,
-    "video": true,
-    "videoCompression": false,
-    "videoUploadOnPasses": false,
+    "screenshotOnRunFailure": true,
+    "video": false,
     "baseUrl": "https://www.skedula.com/",
-    "env": {
-        "baseUrlSub": "https://auth.ioeducation.com/users/sign_in",
-        "baseUrlP": "https://www.skedula.com/auth/login/",
-        "baseUrlPsub": "https://www.skedula.com/home/"
-      } 
+    "$schema": "https://on.cypress.io/cypress.schema.json",
+      "reporter": "cypress-mochawesome-reporter",
+      "reporterOptions": {
+        "toConsole": true,
+        "overwrite": true,
+        "html": true,
+        "charts": true
+    },
+    "screenshotsFolder":"cypress/screenshots",
+    "viewportWidth": 1366,
+    "viewportHeight": 768
 }
