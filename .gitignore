@@ -5,3 +5,5 @@ cypress/integration/examples
 cypress/screenshots
 cypress/videos
 cypress/results
+cypress/results/json
+
