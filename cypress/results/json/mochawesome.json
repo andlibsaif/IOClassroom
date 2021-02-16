@@ -2,14 +2,14 @@
   "stats": {
     "suites": 3,
     "tests": 3,
-    "passes": 3,
+    "passes": 2,
     "pending": 0,
-    "failures": 0,
-    "start": "2021-02-16T09:18:08.836Z",
-    "end": "2021-02-16T09:19:08.783Z",
-    "duration": 59947,
+    "failures": 1,
+    "start": "2021-02-16T10:59:39.317Z",
+    "end": "2021-02-16T11:01:17.149Z",
+    "duration": 97832,
     "testsRegistered": 3,
-    "passPercent": 100,
+    "passPercent": 66.66666666666666,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "bd38abf7-ffdd-4850-92fd-29ddcfb2859a",
+      "uuid": "6b3f7fa7-a417-4418-94c0-9520aa8aaf72",
       "title": "",
       "fullFile": "cypress\\integration\\IO_Classroom\\Login.spec.js",
       "file": "cypress\\integration\\IO_Classroom\\Login.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "9e952cf0-abbd-44ba-97b3-451ad0975ffc",
+          "uuid": "2b43c223-9c4c-436c-b16c-efa6dae4c557",
           "title": "School User",
           "fullFile": "",
           "file": "",
@@ -38,35 +38,39 @@
               "title": "Login to school",
               "fullTitle": "School User Login to school",
               "timedOut": null,
-              "duration": 34542,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
+              "duration": 52680,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
-              "context": null,
-              "code": "log_in.login();\nlog_in.proceed_school();\ncy.title().should('eq', 'Dashboard');",
-              "err": {},
-              "uuid": "362379f6-405b-4f8e-9ad9-a26b74e29bd6",
-              "parentUUID": "9e952cf0-abbd-44ba-97b3-451ad0975ffc",
+              "context": "[\n  \"D:\\\\Illumunate\\\\Illumunate\\\\IOClassroom\\\\cypress\\\\screenshots/IO_Classroom\\\\Login.spec.js/School User -- Login to school (failed).png\",\n  {\n    \"title\": \"Failed screenshot\",\n    \"value\": \"screenshots\\\\IO_Classroom\\\\Login.spec.js\\\\School User -- Login to school (failed).png\"\n  }\n]",
+              "code": "log_in.login();\nlog_in.proceed_school();\ncy.title().should('eq', 'Dashboard_test');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected 'Dashboard' to equal 'Dashboard_test'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected 'Dashboard' to equal 'Dashboard_test'\n    at Context.eval (https://www.skedula.com/__cypress/tests?p=cypress\\integration\\IO_Classroom\\Login.spec.js:123:16)",
+                "diff": "- 'Dashboard'\n+ 'Dashboard_test'\n"
+              },
+              "uuid": "c9df7343-a77e-4067-a634-cdb2178f60a0",
+              "parentUUID": "2b43c223-9c4c-436c-b16c-efa6dae4c557",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "362379f6-405b-4f8e-9ad9-a26b74e29bd6"
+          "passes": [],
+          "failures": [
+            "c9df7343-a77e-4067-a634-cdb2178f60a0"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 34542,
+          "duration": 52680,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "88fd1ef3-f816-463a-9856-62a3ac084d62",
+          "uuid": "73849823-ec1f-465d-ada3-dd227529fccc",
           "title": "Admin User",
           "fullFile": "",
           "file": "",
@@ -77,7 +81,7 @@
               "title": "Login to admin portal",
               "fullTitle": "Admin User Login to admin portal",
               "timedOut": null,
-              "duration": 14597,
+              "duration": 28637,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -86,26 +90,26 @@
               "context": null,
               "code": "log_in.login();\nlog_in.proceed_admin();\ncy.title().should('eq', 'School List');",
               "err": {},
-              "uuid": "4aa08fcd-08e2-4993-a1f2-720a3bac5039",
-              "parentUUID": "88fd1ef3-f816-463a-9856-62a3ac084d62",
+              "uuid": "3e7e0d6e-79a8-4d93-af40-fa426fb21adc",
+              "parentUUID": "73849823-ec1f-465d-ada3-dd227529fccc",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "4aa08fcd-08e2-4993-a1f2-720a3bac5039"
+            "3e7e0d6e-79a8-4d93-af40-fa426fb21adc"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 14597,
+          "duration": 28637,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "d25bb17f-ec15-4950-acdb-ffc9d4a58de5",
+          "uuid": "458a8a1b-c918-48d1-9c31-75868118de60",
           "title": "Impersonate User",
           "fullFile": "",
           "file": "",
@@ -116,7 +120,7 @@
               "title": "Login to impersonate",
               "fullTitle": "Impersonate User Login to impersonate",
               "timedOut": null,
-              "duration": 5784,
+              "duration": 7809,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -125,20 +129,20 @@
               "context": null,
               "code": "log_in.login();\nlog_in.proceed_impersonate();\ncy.title().should('eq', 'Troubleshoot');",
               "err": {},
-              "uuid": "3d7fea14-4dac-489d-9d3e-1c20d8c07e63",
-              "parentUUID": "d25bb17f-ec15-4950-acdb-ffc9d4a58de5",
+              "uuid": "117aacd8-942b-4b50-8f0d-9a8a3754931f",
+              "parentUUID": "458a8a1b-c918-48d1-9c31-75868118de60",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "3d7fea14-4dac-489d-9d3e-1c20d8c07e63"
+            "117aacd8-942b-4b50-8f0d-9a8a3754931f"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 5784,
+          "duration": 7809,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

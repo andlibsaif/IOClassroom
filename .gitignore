@@ -1,0 +1,7 @@
+#Folders ignored
+cypress/fixtures
+node_modules
+cypress/integration/examples
+cypress/screenshots
+cypress/videos
+cypress/results

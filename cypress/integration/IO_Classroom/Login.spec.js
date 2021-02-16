@@ -21,7 +21,7 @@ describe('School User', function(){
     it('Login to school', function(){  
                  log_in.login()
                  log_in.proceed_school()
-                 cy.title().should('eq','Dashboard')
+                 cy.title().should('eq','Dashboard_test')
                 })
             })
     
