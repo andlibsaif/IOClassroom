@@ -1,5 +1,5 @@
 class login{
-    
+    // Element for login page all the locator ends with _l
     email_l(){
         return cy.get('#user_username')
     }
@@ -37,15 +37,18 @@ class login{
     login_user_l(){
         return cy.get('.ui-button-text')
     }
+    // Functions for login page how the pages going to behave
+    loginui(user,pwd){
+        this.signInButton_l().click()
+        this.email_l().type(user)
+        this.signInButton_l().click()
+        this.password_l().type(pwd)
+        this.signInButton_l().click()
+        cy.title().should('eq','IO Classroom')
+    }
 
-    login(user,pwd){
-       this.signInButton_l().click()
-       this.email_l().type(user)
-       this.signInButton_l().click()
-       this.password_l().type(pwd)
-       this.signInButton_l().click()
-       
-
+    login(){
+        cy.title().should('eq','IO Classroom')
     }
 
     logout(){
