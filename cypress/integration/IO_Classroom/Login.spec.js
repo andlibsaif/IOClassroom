@@ -10,8 +10,8 @@ before(() => {
 });
 // runs before each test in the block
 beforeEach( () => {
-    cy.fixture('env_variable.json').as('env')
     Cypress.Cookies.preserveOnce("ASP.NET_SessionId")
+    cy.fixture('env_variable.json').as('env')
     cy.get('@env').then(env => {
     cy.visit(env.auth_url)
     })

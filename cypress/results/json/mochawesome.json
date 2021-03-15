@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 1,
-    "start": "2021-02-16T10:59:39.317Z",
-    "end": "2021-02-16T11:01:17.149Z",
-    "duration": 97832,
+    "start": "2021-02-16T13:19:12.817Z",
+    "end": "2021-02-16T13:20:43.210Z",
+    "duration": 90393,
     "testsRegistered": 3,
     "passPercent": 66.66666666666666,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "6b3f7fa7-a417-4418-94c0-9520aa8aaf72",
+      "uuid": "d9488751-c80d-4beb-a743-d0896b66a32f",
       "title": "",
       "fullFile": "cypress\\integration\\IO_Classroom\\Login.spec.js",
       "file": "cypress\\integration\\IO_Classroom\\Login.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "2b43c223-9c4c-436c-b16c-efa6dae4c557",
+          "uuid": "4b084474-d766-4f35-9795-3e3ab2c14fae",
           "title": "School User",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Login to school",
               "fullTitle": "School User Login to school",
               "timedOut": null,
-              "duration": 52680,
+              "duration": 60558,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -51,8 +51,8 @@
                 "estack": "AssertionError: Timed out retrying after 4000ms: expected 'Dashboard' to equal 'Dashboard_test'\n    at Context.eval (https://www.skedula.com/__cypress/tests?p=cypress\\integration\\IO_Classroom\\Login.spec.js:123:16)",
                 "diff": "- 'Dashboard'\n+ 'Dashboard_test'\n"
               },
-              "uuid": "c9df7343-a77e-4067-a634-cdb2178f60a0",
-              "parentUUID": "2b43c223-9c4c-436c-b16c-efa6dae4c557",
+              "uuid": "410af0d8-47df-4139-bf7a-e608349e03e8",
+              "parentUUID": "4b084474-d766-4f35-9795-3e3ab2c14fae",
               "isHook": false,
               "skipped": false
             }
@@ -60,17 +60,17 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "c9df7343-a77e-4067-a634-cdb2178f60a0"
+            "410af0d8-47df-4139-bf7a-e608349e03e8"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 52680,
+          "duration": 60558,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "73849823-ec1f-465d-ada3-dd227529fccc",
+          "uuid": "4678e227-f9e4-401b-8dd0-3d61f4cdfcd5",
           "title": "Admin User",
           "fullFile": "",
           "file": "",
@@ -81,7 +81,7 @@
               "title": "Login to admin portal",
               "fullTitle": "Admin User Login to admin portal",
               "timedOut": null,
-              "duration": 28637,
+              "duration": 16231,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -90,26 +90,26 @@
               "context": null,
               "code": "log_in.login();\nlog_in.proceed_admin();\ncy.title().should('eq', 'School List');",
               "err": {},
-              "uuid": "3e7e0d6e-79a8-4d93-af40-fa426fb21adc",
-              "parentUUID": "73849823-ec1f-465d-ada3-dd227529fccc",
+              "uuid": "2b13ed80-c4f8-460a-8000-5937f3a7bb23",
+              "parentUUID": "4678e227-f9e4-401b-8dd0-3d61f4cdfcd5",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "3e7e0d6e-79a8-4d93-af40-fa426fb21adc"
+            "2b13ed80-c4f8-460a-8000-5937f3a7bb23"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 28637,
+          "duration": 16231,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "458a8a1b-c918-48d1-9c31-75868118de60",
+          "uuid": "046cdfa7-72de-4634-93a2-7c342a0970e1",
           "title": "Impersonate User",
           "fullFile": "",
           "file": "",
@@ -120,7 +120,7 @@
               "title": "Login to impersonate",
               "fullTitle": "Impersonate User Login to impersonate",
               "timedOut": null,
-              "duration": 7809,
+              "duration": 6509,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -129,20 +129,20 @@
               "context": null,
               "code": "log_in.login();\nlog_in.proceed_impersonate();\ncy.title().should('eq', 'Troubleshoot');",
               "err": {},
-              "uuid": "117aacd8-942b-4b50-8f0d-9a8a3754931f",
-              "parentUUID": "458a8a1b-c918-48d1-9c31-75868118de60",
+              "uuid": "8c56dfb1-c700-4167-afb3-59792ba47951",
+              "parentUUID": "046cdfa7-72de-4634-93a2-7c342a0970e1",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "117aacd8-942b-4b50-8f0d-9a8a3754931f"
+            "8c56dfb1-c700-4167-afb3-59792ba47951"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 7809,
+          "duration": 6509,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
